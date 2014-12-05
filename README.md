@@ -38,12 +38,12 @@ There is one noteworthy attribute:"curtainView:fixedValue",which determines the 
 
 Usually we set this in codes.For example in upper case, I want a only the ImageView to be shown when the CurtainView is closed,so we just need to set the fixedValue to be the ImageView's height:
         
- curtainView.post(new Runnable() {
+	curtainView.post(new Runnable() {
 	@Override
-	public void run() {
-		curtainView.setCurtainGravityAndFixedValue(null,imageView.getHeight());
-	}
-});
+		public void run() {
+			curtainView.setCurtainGravityAndFixedValue(null,imageView.getHeight());
+		}
+	});
 
 
 
