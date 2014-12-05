@@ -13,5 +13,25 @@ The MotionEvent handling is base on chrisbanes' library : https://github.com/chr
 
 How to Use
 ===========
+   <com.movitech.aicaprio.CurtainView
+        xmlns:curtainView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        curtainView:curtainGravity="top"
+        curtainView:curtainStatus="closed"
+        curtainView:reboundMode="half"
+        curtainView:scrollDuration="1300" >
+
+        <ImageView
+            android:id="@id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_pull" />
+    </com.movitech.aicaprio.CurtainView>
+        
+        
 
 
