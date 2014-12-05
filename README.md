@@ -10,7 +10,7 @@ The MotionEvent handling is base on chrisbanes' library : https://github.com/chr
 ![image](https://github.com/aicaprio/CurtainView/blob/master/preview/p1.gif)   
 
 ![image](https://github.com/aicaprio/CurtainView/blob/master/preview/p2.gif)
-
+===========
 How to Use
 ===========
 
