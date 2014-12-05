@@ -13,6 +13,8 @@ The MotionEvent handling is base on chrisbanes' library : https://github.com/chr
 
 How to Use
 ===========
+Just some simple configs:
+
     <com.movitech.aicaprio.CurtainView
         xmlns:curtainView="http://schemas.android.com/apk/res-auto"
         android:id="@+id/cb1"
@@ -31,6 +33,19 @@ How to Use
             android:layout_gravity="bottom"
             android:src="@drawable/ic_pull" />
     </com.movitech.aicaprio.CurtainView>
+    
+There is one noteworthy attribute:"curtainView:fixedValue",which determines the minimum hegiht or width appears on scrren,and it's default value is one third of the CurtainView's width or height(depends on current gravity).
+Usually we set this in codes.For example in upper case, I want a only the ImageView to be shown when the CurtainView is closed,so we just need to set the fixedValue to be the ImageView's height:
+        
+        curtainView.post(new Runnable() {
+			@Override
+			public void run() {
+				curtainView.setCurtainGravityAndFixedValue(null,imageView.getHeight());
+			}
+		});
+
+
+
    
     
 
