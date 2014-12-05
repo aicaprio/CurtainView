@@ -13,7 +13,7 @@ The MotionEvent handling is base on chrisbanes' library : https://github.com/chr
 
 How to Use
 ===========
-Just some simple configs:
+Some simple configs:
 
     <com.movitech.aicaprio.CurtainView
         xmlns:curtainView="http://schemas.android.com/apk/res-auto"
