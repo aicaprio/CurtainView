@@ -1,0 +1,41 @@
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar"/>
+
+    <style name="RadioButtonOff1">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/sl_radio1</item>
+        <item name="android:checked">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="RadioButtonOn1" parent="RadioButtonOff1">
+        <item name="android:checked">true</item>
+    </style>
+
+    <style name="RadioButtonOff2" parent="RadioButtonOff1">
+        <item name="android:background">@drawable/sl_radio2</item>
+    </style>
+
+    <style name="RadioButtonOn2" parent="RadioButtonOff2">
+        <item name="android:checked">true</item>
+    </style>
+
+    <style name="RadioGroup1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RadioGroup2" parent="RadioGroup1">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+</resources>

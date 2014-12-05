@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CurtainView">
+        <attr name="curtainGravity" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+        <attr name="curtainStatus" format="enum">
+            <enum name="opened" value="0"/>
+            <enum name="closed" value="1"/>
+        </attr>
+        <attr name="reboundMode" format="enum">
+            <enum name="alwaysBack" value="0"/>
+            <enum name="half" value="1"/>
+        </attr>
+        <attr name="scrollDuration" format="integer"/>
+        <attr name="fixedValue" format="dimension"/>
+    </declare-styleable>
+</resources>

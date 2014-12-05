@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility" severity="ignore" />
+    <issue id="NewApi" severity="ignore" />
+    <issue id="Recycle" severity="ignore" />
+</lint>
