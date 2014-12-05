@@ -13,7 +13,7 @@ The MotionEvent handling is base on chrisbanes' library : https://github.com/chr
 
 How to Use
 ===========
-   <com.movitech.aicaprio.CurtainView
+    <com.movitech.aicaprio.CurtainView
         xmlns:curtainView="http://schemas.android.com/apk/res-auto"
         android:id="@+id/cb1"
         android:layout_width="match_parent"
@@ -31,7 +31,6 @@ How to Use
             android:layout_gravity="bottom"
             android:src="@drawable/ic_pull" />
     </com.movitech.aicaprio.CurtainView>
-        
-        
-
+   
+    
 
