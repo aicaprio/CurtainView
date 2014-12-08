@@ -5,7 +5,7 @@
              android:background="@drawable/bg_frame">
 
     <com.movitech.aicaprio.CurtainView
-        android:id="@+id/cb1"
+        android:id="@+id/cv1"
         xmlns:curtainView="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="260dp"

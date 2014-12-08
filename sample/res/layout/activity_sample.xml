@@ -6,7 +6,7 @@
              android:orientation="vertical">
 
     <com.movitech.aicaprio.CurtainView
-        android:id="@+id/cb1"
+        android:id="@+id/cv1"
         xmlns:curtainView="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,68 +24,67 @@
             android:layout_height="match_parent"
             android:layout_marginTop="10dp">
 
-            <RadioGroup
-                android:id="@+id/rgCurtainGravity"
-                style="@style/RadioGroup1">
+            <LinearLayout
+                android:id="@+id/llCurtainGravity"
+                style="@style/llGroup1">
 
-                <RadioButton
-                    android:id="@+id/rbCGravityLeft"
-                    style="@style/RadioButtonOn1"
+                <Button
+                    android:id="@+id/btnCGravityLeft"
+                    style="@style/btnOn"
                     android:text="left"/>
 
-                <RadioButton
-                    android:id="@+id/rbCGravityTop"
-                    style="@style/RadioButtonOff1"
+                <Button
+                    android:id="@+id/btnCGravityTop"
+                    style="@style/btnOff"
                     android:text="top"/>
 
-                <RadioButton
-                    android:id="@+id/rbCGravityRight"
-                    style="@style/RadioButtonOff1"
+                <Button
+                    android:id="@+id/btnCGravityRight"
+                    style="@style/btnOff"
                     android:text="right"/>
 
-                <RadioButton
-                    android:id="@+id/rbCGravityBottom"
-                    style="@style/RadioButtonOff1"
+                <Button
+                    android:id="@+id/btnCGravityBottom"
+                    style="@style/btnOff"
                     android:text="bottom"/>
 
-            </RadioGroup>
+            </LinearLayout>
 
-            <RadioGroup
-                android:id="@+id/rgReboundMode"
-                style="@style/RadioGroup2"
-                android:layout_below="@id/rgCurtainGravity">
+            <LinearLayout
+                android:id="@+id/llReboundMode"
+                style="@style/llGroup2"
+                android:layout_below="@id/llCurtainGravity">
 
-                <RadioButton
-                    android:id="@+id/rbAlwaysBack"
-                    style="@style/RadioButtonOff1"
+                <Button
+                    android:id="@+id/btnAlwaysBack"
+                    style="@style/btnOff"
                     android:text="alwaysBack"/>
 
-                <RadioButton
-                    android:id="@+id/rbHalf"
-                    style="@style/RadioButtonOn1"
+                <Button
+                    android:id="@+id/btnHalf"
+                    style="@style/btnOn"
                     android:text="half"/>
 
-            </RadioGroup>
+            </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/llCurtainStatus"
+                style="@style/llGroup2"
+                android:layout_below="@id/llReboundMode">
 
-            <RadioGroup
-                android:id="@+id/rgCurtainStatus"
-                style="@style/RadioGroup2"
-                android:layout_below="@id/rgReboundMode">
-
-                <RadioButton
-                    android:id="@+id/rbOpened"
-                    style="@style/RadioButtonOn2"
+                <Button
+                    android:id="@+id/btnOpened"
+                    style="@style/btnOn"
                     android:clickable="false"
                     android:text="opened"/>
 
-                <RadioButton
-                    android:id="@+id/rbClosed"
-                    style="@style/RadioButtonOff2"
+                <Button
+                    android:id="@+id/btnClosed"
+                    style="@style/btnOff"
                     android:clickable="false"
                     android:text="closed"/>
 
-            </RadioGroup>
+            </LinearLayout>
 
             <Button
                 android:id="@+id/btn1"
