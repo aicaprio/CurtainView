@@ -1,7 +1,8 @@
 CurtainView
 ===========
 
-https://img.shields.io/badge/Android%20Arsenal-CurtainView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1244
+[![image]](http://www.github.com/)  
+[image]: https://img.shields.io/badge/Android%20Arsenal-CurtainView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1244
 
 The CurtainView is much like a layer on the top level of your layout. It's also a container which can wrap other Views.
 
