@@ -1,4 +1,4 @@
-package com.aicaprio.curtainview;
+package org.aicaprio.curtainview;
 
 import org.junit.Test;
 
