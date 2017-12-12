@@ -205,6 +205,7 @@ public interface ICurtainViewBase {
         }
     }
 
+
     /**
      * A monitor with the pulling event
      */
