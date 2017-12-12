@@ -30,7 +30,6 @@ public class CurtainView extends FrameLayout implements ICurtainViewBase {
 
     private CurtainGravity mCGravity = CurtainGravity.getDefault();
 
-
     private CurtainStatus mCStatus = CurtainStatus.getDefault();
 
     private ReboundMode mReboundMode = ReboundMode.getDefault();
