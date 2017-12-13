@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@mipmap/bg_frame"
+             android:orientation="vertical">
+
+    <org.aicaprio.curtainview.CurtainView
+        android:id="@+id/cb1"
+        xmlns:curtainView="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_margin="25dp"
+        android:background="@color/holo_blue_bright"
+        android:orientation="vertical"
+        curtainView:curtainGravity="left"
+        curtainView:curtainStatus="opened"
+        curtainView:reboundMode="half"
+        curtainView:scrollDuration="750">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <RadioGroup
+                android:id="@+id/rgCurtainGravity"
+                style="@style/RadioGroup1">
+
+                <RadioButton
+                    android:id="@+id/rbCGravityLeft"
+                    style="@style/RadioButtonOn1"
+                    android:text="left"/>
+
+                <RadioButton
+                    android:id="@+id/rbCGravityTop"
+                    style="@style/RadioButtonOff1"
+                    android:text="top"/>
+
+                <RadioButton
+                    android:id="@+id/rbCGravityRight"
+                    style="@style/RadioButtonOff1"
+                    android:text="right"/>
+
+                <RadioButton
+                    android:id="@+id/rbCGravityBottom"
+                    style="@style/RadioButtonOff1"
+                    android:text="bottom"/>
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rgReboundMode"
+                style="@style/RadioGroup2"
+                android:layout_below="@id/rgCurtainGravity">
+
+                <RadioButton
+                    android:id="@+id/rbAlwaysBack"
+                    style="@style/RadioButtonOff1"
+                    android:text="alwaysBack"/>
+
+                <RadioButton
+                    android:id="@+id/rbHalf"
+                    style="@style/RadioButtonOn1"
+                    android:text="half"/>
+
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/rgCurtainStatus"
+                style="@style/RadioGroup2"
+                android:layout_below="@id/rgReboundMode">
+
+                <RadioButton
+                    android:id="@+id/rbOpened"
+                    style="@style/RadioButtonOn2"
+                    android:clickable="false"
+                    android:text="opened"/>
+
+                <RadioButton
+                    android:id="@+id/rbClosed"
+                    style="@style/RadioButtonOff2"
+                    android:clickable="false"
+                    android:text="closed"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:text="Toggle Status"
+                android:textColor="@color/holo_blue_bright"/>
+        </RelativeLayout>
+
+    </org.aicaprio.curtainview.CurtainView>
+
+</FrameLayout>

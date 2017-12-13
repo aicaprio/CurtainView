@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@mipmap/bg_frame">
+
+    <org.aicaprio.curtainview.CurtainView
+        xmlns:curtainView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_gravity="top"
+        curtainView:curtainGravity="top"
+        curtainView:curtainStatus="closed"
+        curtainView:reboundMode="half"
+        curtainView:scrollDuration="1300">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/iv1"
+                android:background="@color/translucent"
+                android:orientation="vertical">
+
+                <GridView
+                    android:id="@+id/gv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="4"
+                    android:verticalSpacing="6dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@id/iv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/ic_pull"/>
+        </RelativeLayout>
+
+    </org.aicaprio.curtainview.CurtainView>
+
+</FrameLayout>
