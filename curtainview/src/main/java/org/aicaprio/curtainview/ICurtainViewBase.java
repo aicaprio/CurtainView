@@ -84,7 +84,7 @@ public interface ICurtainViewBase {
      * For easily operating,two setter methods combine to be one.
      *
      * @param curtainGravity If there is no need to change the CurtainGravity,put null instead.
-     * @param fixedValue     If fixedValue <=0,a default value (see also:FIXED_RATE) will
+     * @param fixedValue     If fixedValue less than 0 , a default value (see also:FIXED_RATE) will
      *                       be set.
      */
     public void setCurtainGravityAndFixedValue(CurtainGravity curtainGravity, int fixedValue);
