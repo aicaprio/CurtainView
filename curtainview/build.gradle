@@ -30,29 +30,3 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
 
-ext {
-    bintrayRepo = 'android_libs'
-    bintrayName = 'curtainview'
-
-    publishedGroupId = 'org.aicaprio.curtainview'
-    libraryName = 'CurtainView'
-    artifact = 'curtainview'
-
-    libraryDescription = 'An android view,which can layer on any gravity for swiping.'
-
-    siteUrl = 'https://github.com/aicaprio/CurtainView'
-    gitUrl = 'https://github.com/aicaprio/CurtainView.git'
-
-    libraryVersion = '1.0.1'
-
-    developerId = 'aicaprio'
-    developerName = 'Shuo'
-    developerEmail = 'aicaprio@gmail.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
