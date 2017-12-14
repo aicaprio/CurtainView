@@ -3,11 +3,9 @@ CurtainView
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-CurtainView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1244)
 
-This view is much like a layer on the top level of your layout. It's also a container which can wrap other Views.
+This view is much like a layer on the top level of your layout, it's also a container which can wrap other Views.
 
 And it will not block the actions of the child view unless you make a standard pull event.
-
-MotionEvent handling is base on [Chris Banes' library](https://github.com/chrisbanes/Android-PullToRefresh).
 
 ![image](https://github.com/aicaprio/CurtainView/blob/master/imgs/ezgif-5-4fc93a6397.gif)   
 
@@ -48,9 +46,9 @@ Just a few configs:
     
  ```
  
- ###### Attributes
+ ### Attributes Desc
     
-> "curtainView:curtainGravity": The visual gravity of CurtainView. 
+> **curtainGravity:** The visual gravity of CurtainView. 
 
 "curtainView:curtainStatus": Whether the CurtainView is opend or closed.
 
