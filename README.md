@@ -24,7 +24,7 @@ dependencies {
 Usage
 --------
 
-Just few configs:
+#### Just few configs :
 
 ```java
 <org.aicaprio.curtainview.CurtainView
