@@ -58,10 +58,11 @@ Just few configs:
 * `scrollDuration` : **scrolling duration after lift the finger off CurtainView.**
 
     
-* Here is an attribute need to be noticed :  `fixedValue` , which defines the minimum width or height ( depends on the gravity ) appears on the screen , the default value is one third of the CurtainView's width or height( depends on the gravity ).
+** Here is an attribute need to be noticed :  `fixedValue` , which defines the minimum width or height ( depends on the gravity ) appears on the screen , the default value is one third of the CurtainView's width or height( depends on the gravity ).**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usually we set this attribute in your java codes . For example: 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'd like `iv1` completely showing when CurtainView is closed , so we just need to set the `fixedValue` to be `iv1's` height:
+Usually we set this attribute in your java codes , for example: 
+
+I'd like `iv1` completely showing when CurtainView is closed , so we just need to set the `fixedValue` to be `iv1's` height:
 
 ```java       
 curtainView.post(
