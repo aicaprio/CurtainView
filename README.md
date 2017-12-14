@@ -49,13 +49,13 @@ Usage
  
  #### Attributes Desc :
     
-* `curtainGravity`  :  **the visual gravity of CurtainView**. 
+* `curtainGravity`  :  **visual gravity of CurtainView**. 
 
 * `curtainStatus`  :  **whether the CurtainView is opend or closed.**
 
-* `reboundMode`  :  **how will it scroll when lift fingers off the CurtainView**
+* `reboundMode`  :  **how will it scrolls when fingers off CurtainView**
 
-* `scrollDuration`  :  **scrolling duration after lift the finger off CurtainView.**
+* `scrollDuration`  :  **scrolling duration after fingers off CurtainView.**
 
 *** 
 
