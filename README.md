@@ -15,6 +15,8 @@ And it will not block the actions of the child view unless you make a standard p
 Download
 --------
 
+Add the library to your module's `build.gradle`:
+
 ```groovy
 dependencies {
   compile 'org.aicaprio:curtainview:1.0.1'
@@ -46,9 +48,9 @@ Just a few configs:
     
  ```
  
- ### Attributes Desc
+ ##### Attributes Desc
     
-> **curtainGravity:** The visual gravity of CurtainView. 
+* **curtainGravity:** The visual gravity of CurtainView. 
 
 "curtainView:curtainStatus": Whether the CurtainView is opend or closed.
 
