@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:background="@mipmap/bg_frame"
+             android:background="@mipmap/bg_frame2"
              android:orientation="vertical">
 
     <org.aicaprio.curtainview.CurtainView
@@ -17,7 +17,7 @@
         curtainView:curtainGravity="left"
         curtainView:curtainStatus="opened"
         curtainView:reboundMode="half"
-        curtainView:scrollDuration="750">
+        curtainView:scrollDuration="500">
 
         <RelativeLayout
             android:layout_width="match_parent"

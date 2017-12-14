@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:background="@mipmap/bg_frame">
+             android:background="@mipmap/bg_frame2">
 
     <org.aicaprio.curtainview.CurtainView
         xmlns:curtainView="http://schemas.android.com/apk/res-auto"
@@ -13,7 +13,7 @@
         curtainView:curtainGravity="top"
         curtainView:curtainStatus="closed"
         curtainView:reboundMode="half"
-        curtainView:scrollDuration="1300">
+        curtainView:scrollDuration="750">
 
         <RelativeLayout
             android:layout_width="match_parent"

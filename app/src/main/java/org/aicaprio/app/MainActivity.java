@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         showSample1();
-        // showSample2();
+//        showSample2();
     }
 
     private void showSample1() {
@@ -52,20 +52,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mCurtainView
-                .setAutoScrollingListener(new ICurtainViewBase.AutoScrollingListener() {
-                    @Override
-                    public void onScrolling(int currValue, int currVelocity,
-                                            int startValue, int finalValue) {
-                    }
+        mCurtainView.setAutoScrollingListener(new ICurtainViewBase.AutoScrollingListener() {
+            @Override
+            public void onScrolling(
+                    int currValue, int currVelocity, int startValue, int finalValue) {
+            }
 
-                    @Override
-                    public void onScrollFinished() {
-                        boolean isOpened = mCurtainView.getCurtainStatus() == ICurtainViewBase.CurtainStatus.OPENED;
-                        rbOpened.setChecked(isOpened);
-                        rbClosed.setChecked(!isOpened);
-                    }
-                });
+            @Override
+            public void onScrollFinished() {
+                boolean isOpened = mCurtainView.getCurtainStatus() == ICurtainViewBase.CurtainStatus.OPENED;
+                rbOpened.setChecked(isOpened);
+                rbClosed.setChecked(!isOpened);
+            }
+        });
 
         rgCGravity = (RadioGroup) findViewById(R.id.rgCurtainGravity);
         rgReboundMode = (RadioGroup) findViewById(R.id.rgReboundMode);
@@ -90,8 +89,7 @@ public class MainActivity extends AppCompatActivity {
          * parent is FrameLayout,we do like this when we change the
          * CurtainGravity.
          */
-        FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) mCurtainView
-                .getLayoutParams();
+        FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) mCurtainView.getLayoutParams();
         layoutParams.gravity = layoutGravity;
         mCurtainView.setLayoutParams(layoutParams);
     }
@@ -144,12 +142,12 @@ public class MainActivity extends AppCompatActivity {
         final GridView gv1 = (GridView) findViewById(R.id.gv1);
 
         final List<Map<String, Integer>> data = getData();
-        gv1.setAdapter(new SimpleAdapter(this, data, R.layout.item_numbers,
-                new String[] { TEXT_TAG }, new int[] { R.id.item_tvNum }));
+        gv1.setAdapter(new SimpleAdapter(this, data, R.layout.item_numbers, new String[]{TEXT_TAG},
+                new int[]{R.id.item_tvNum}));
         gv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
+            public void onItemClick(
+                    AdapterView<?> parent, View view, int position, long id) {
                 showToast(data.get(position).get(TEXT_TAG) + " clicked");
             }
         });
@@ -165,8 +163,7 @@ public class MainActivity extends AppCompatActivity {
         curtainView.post(new Runnable() {
             @Override
             public void run() {
-                curtainView.setCurtainGravityAndFixedValue(null,
-                        iv1.getHeight());
+                curtainView.setCurtainGravityAndFixedValue(null, iv1.getHeight());
             }
         });
     }
