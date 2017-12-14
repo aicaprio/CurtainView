@@ -47,7 +47,7 @@ Usage
 </org.aicaprio.curtainview.CurtainView>  
  ```
  
- #### Attributes Desc
+ #### Attributes Desc :
     
 * `curtainGravity`  :  **the visual gravity of CurtainView**. 
 
