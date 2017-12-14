@@ -3,7 +3,7 @@ CurtainView
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-CurtainView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1244)
 
-Like the [offical DrawerLayout](https://github.com/aosp-mirror/platform_frameworks_support/blob/master/core-ui/src/main/java/android/support/v4/widget/DrawerLayout.java) , but can layer both horizontally and vertically .
+Like [DrawerLayout](https://github.com/aosp-mirror/platform_frameworks_support/blob/master/core-ui/src/main/java/android/support/v4/widget/DrawerLayout.java) , but can layer both horizontally and vertically .
 
 ![image](https://github.com/aicaprio/CurtainView/blob/master/imgs/ezgif-5-4fc93a6397.gif)   
 
@@ -51,27 +51,25 @@ Just few configs:
  
  #### Attributes Desc
     
-* `curtainGravity`**:  the visual gravity of CurtainView**. 
+* `curtainGravity` : **the visual gravity of CurtainView**. 
 
-* `curtainStatus`**: whether the CurtainView is opend or closed.**
+* `curtainStatus` : **whether the CurtainView is opend or closed.**
 
-* `reboundMode`**: after lift the finger off the CurtainView,how will it scroll to.**
+* `reboundMode` : **after lift the finger off the CurtainView,how will it scroll to.**
 
-* `scrollDuration`**: scrolling duration after lift the finger off CurtainView.**
+* `scrollDuration` : **scrolling duration after lift the finger off CurtainView.**
 
     
-Here is an attribute need to be noticed : `fixedValue`, which defines the minimum width or height ( depends on the gravity ) appears on the scrren , the default value is one third of the CurtainView's width or height( depends on the gravity ).
+Here is an attribute need to be noticed :  `fixedValue` , which defines the minimum width or height ( depends on the gravity ) appears on the scrren , the default value is one third of the CurtainView's width or height( depends on the gravity ).
 
 Usually we handle this attribute in your java codes
 
 For example ,I want only the ImageView appears when the CurtainView is closed,so we just need to set the fixedValue to be the ImageView's height:
 
-```java
-        
+```java       
 curtainView.post(
     () -> mCurtainView.setCurtainGravityAndFixedValue(null, mCurtainView.getHeight())
 );
-
 ```
 
 
