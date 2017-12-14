@@ -55,16 +55,16 @@ Just few configs:
 
 * `curtainStatus` : **whether the CurtainView is opend or closed.**
 
-* `reboundMode` : **after lift the finger off the CurtainView,how will it scroll to.**
+* `reboundMode` : **how will it scroll when lift fingers off the CurtainView**
 
 * `scrollDuration` : **scrolling duration after lift the finger off CurtainView.**
 
     
 Here is an attribute need to be noticed :  `fixedValue` , which defines the minimum width or height ( depends on the gravity ) appears on the scrren , the default value is one third of the CurtainView's width or height( depends on the gravity ).
 
-Usually we handle this attribute in your java codes
+Usually we set this attribute in your java codes.
 
-For example ,I want only the ImageView appears when the CurtainView is closed,so we just need to set the fixedValue to be the ImageView's height:
+For example , I'd like `iv1` completely showing when CurtainView is closed , so we just need to set the `fixedValue` to be `iv1's` height:
 
 ```java       
 curtainView.post(
