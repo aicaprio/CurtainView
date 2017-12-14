@@ -49,13 +49,13 @@ Just few configs:
  
  #### Attributes Desc
     
-* `curtainGravity` : **the visual gravity of CurtainView**. 
+* `curtainGravity`  :  **the visual gravity of CurtainView**. 
 
-* `curtainStatus` : **whether the CurtainView is opend or closed.**
+* `curtainStatus`  :  **whether the CurtainView is opend or closed.**
 
-* `reboundMode` : **how will it scroll when lift fingers off the CurtainView**
+* `reboundMode`  :  **how will it scroll when lift fingers off the CurtainView**
 
-* `scrollDuration` : **scrolling duration after lift the finger off CurtainView.**
+* `scrollDuration`  :  **scrolling duration after lift the finger off CurtainView.**
 
     
 **Here is an attribute need to be noticed :  `fixedValue` , which defines the minimum width or height ( depends on the gravity ) appears on the screen , the default value is one third of the CurtainView's width or height( depends on the gravity ).**
