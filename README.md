@@ -13,29 +13,42 @@ MotionEvent handling is base on [Chris Banes' library](https://github.com/chrisb
 
 ![image](https://github.com/aicaprio/CurtainView/blob/master/imgs/ezgif-5-f6189eb790.gif)
 
-How to Use
-===========
-Just a few simple configs:
+
+Download
+--------
+
+```groovy
+dependencies {
+  compile 'org.aicaprio:curtainview:1.0.1'
+}
+```
+
+Usage
+--------
+Just a few configs:
 ```java
+<org.aicaprio.curtainview.CurtainView
+    xmlns:cv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    cv:curtainGravity="top"
+    cv:curtainStatus="closed"
+    cv:reboundMode="half"
+    cv:scrollDuration="1000">
 
-    <com.movitech.aicaprio.CurtainView
-        xmlns:curtainView="http://schemas.android.com/apk/res-auto"
+    <ImageView
+        android:id="@id/iv1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="top"
-        curtainView:curtainGravity="top"
-        curtainView:curtainStatus="closed"
-        curtainView:reboundMode="half"
-        curtainView:scrollDuration="1300" >
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/ic_pull"/>
 
-        <ImageView
-            android:id="@id/iv1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:src="@drawable/ic_pull" />
-    </com.movitech.aicaprio.CurtainView>
+</org.aicaprio.curtainview.CurtainView>
+    
  ```
+ 
+ ###### Attributes
     
 > "curtainView:curtainGravity": The visual gravity of CurtainView. 
 
@@ -48,14 +61,17 @@ Just a few simple configs:
 There is one noteworthy attribute:"curtainView:fixedValue",which determines the minimum hegiht or width appears on scrren,and it's default value is one third of the CurtainView's width or height(depends on current gravity).
 
 Usually we set this in codes.For example in upper case, I want only the ImageView appears when the CurtainView is closed,so we just need to set the fixedValue to be the ImageView's height:
-        
-	curtainView.post(new Runnable() {
-	@Override
-		public void run() {
-			curtainView.setCurtainGravityAndFixedValue(null,imageView.getHeight());
-		}
-	});
 
+```java
+        
+curtainView.post(new Runnable() {
+    @Override
+    public void run() {
+        curtainView.setCurtainGravityAndFixedValue(null,imageView.getHeight());
+    }
+});
+
+```java
 
 
    
