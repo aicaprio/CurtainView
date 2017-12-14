@@ -48,15 +48,15 @@ Just a few configs:
     
  ```
  
- ##### Attributes Desc
+ #### Attributes Desc
     
-* **curtainGravity:** The visual gravity of CurtainView. 
+* `curtainGravity`**:  the visual gravity of CurtainView**. 
 
-"curtainView:curtainStatus": Whether the CurtainView is opend or closed.
+* `curtainStatus`: whether the CurtainView is opend or closed.**
 
-"curtainView:reboundMode": After lift the finger off the CurtainView,how will it scroll to.
+* **reboundMode:** after lift the finger off the CurtainView,how will it scroll to.
 
-"curtainView:scrollDuration:": The scrolling duration after lift the finger off CurtainView.
+* **scrollDuration:** scrolling duration after lift the finger off CurtainView.
     
 There is one noteworthy attribute:"curtainView:fixedValue",which determines the minimum hegiht or width appears on scrren,and it's default value is one third of the CurtainView's width or height(depends on current gravity).
 
@@ -71,7 +71,7 @@ curtainView.post(new Runnable() {
     }
 });
 
-```java
+```
 
 
    
