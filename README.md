@@ -27,7 +27,6 @@ Usage
 Just few configs:
 
 ```java
-
 <org.aicaprio.curtainview.CurtainView
     xmlns:cv="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -45,8 +44,7 @@ Just few configs:
         android:layout_gravity="bottom"
         android:src="@drawable/ic_pull"/>
 
-</org.aicaprio.curtainview.CurtainView>
-    
+</org.aicaprio.curtainview.CurtainView>  
  ```
  
  #### Attributes Desc
@@ -62,9 +60,8 @@ Just few configs:
     
 * Here is an attribute need to be noticed :  `fixedValue` , which defines the minimum width or height ( depends on the gravity ) appears on the screen , the default value is one third of the CurtainView's width or height( depends on the gravity ).
 
-Usually we set this attribute in your java codes.
-
-For example , I'd like `iv1` completely showing when CurtainView is closed , so we just need to set the `fixedValue` to be `iv1's` height:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Usually we set this attribute in your java codes . For example: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'd like `iv1` completely showing when CurtainView is closed , so we just need to set the `fixedValue` to be `iv1's` height:
 
 ```java       
 curtainView.post(
