@@ -65,7 +65,7 @@ Here is an attribute need to be noticed : `fixedValue` ,
 
 Usually we set this attribute in your java codes , for example: 
 
-I'd like `iv1` completely showing when CurtainView is closed , so I just need to set the `fixedValue` to be `iv1's` height:
+We'd like `iv1` completely showing when CurtainView is closed , so we just need to set the `fixedValue` to be `iv1's` height:
 
 ```java       
 mCurtainView.post(
