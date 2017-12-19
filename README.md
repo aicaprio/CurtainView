@@ -1,7 +1,7 @@
 CurtainView
 ===========
 
-[![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/alibaba/atlas/blob/master/LICENSE)
+[![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/alibaba/atlas/blob/master/LICENSE) 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-CurtainView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1244)
 
 Like [DrawerLayout](https://github.com/aosp-mirror/platform_frameworks_support/blob/master/core-ui/src/main/java/android/support/v4/widget/DrawerLayout.java) , but can layer both horizontally and vertically .
