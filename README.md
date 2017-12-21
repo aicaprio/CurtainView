@@ -76,7 +76,7 @@ mCurtainView.post(
 
 Thanks
 --------
-* [Android-PullToRefresh](https://github.com/chrisbanes/Android-PullToRefresh)
+> [Android-PullToRefresh](https://github.com/chrisbanes/Android-PullToRefresh)
 
 License
 --------
