@@ -18,7 +18,7 @@ Add the library to your module's `build.gradle`:
 
 ```groovy
 dependencies {
-  compile 'org.aicaprio:curtainview:1.0.1'
+  implementation 'org.aicaprio:curtainview:1.0.1'
 }
 ```
 
